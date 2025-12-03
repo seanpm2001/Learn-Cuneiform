@@ -1,0 +1,7 @@
+let xs : [File] =
+  ['a.txt', 'b.txt', 'c.txt' : File];
+
+for x <- xs do
+  f( x = x )
+  : File
+end;

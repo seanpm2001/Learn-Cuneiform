@@ -1,0 +1,13 @@
+def untar( tar : File ) -> <fileLst : [File]>
+in Bash *{
+  tar xf $tar
+  fileLst=`tar tf $tar`
+}*
+
+let hg38Tar : File =
+  'hg38/hg38.tar';
+
+let <fileLst = faLst : [File]> =
+  untar( tar = hg38Tar );
+
+faLst;

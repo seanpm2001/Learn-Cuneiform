@@ -1,0 +1,2 @@
+let r : <a1 : Str, a2 : Bool> =
+  <a1 = "my string", a2 = true>;

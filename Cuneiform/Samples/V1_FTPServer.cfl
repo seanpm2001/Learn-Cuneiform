@@ -1,0 +1,18 @@
+declare download-ref-genome;
+
+deftask download-fa( fa : ~path ~id ) *{
+    wget $path/$id.fa.gz
+    gunzip $id.fa.gz
+    mv $id.fa $fa
+}*
+
+ref-genome-path = ~'ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes';
+ref-genome-id = ~'chr22';
+
+ref-genome = apply(
+    task : download-fa
+    path : ref-genome-path
+    id : ref-genome-id
+);
+
+target ref-genome;

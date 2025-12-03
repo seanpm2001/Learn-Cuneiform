@@ -1,0 +1,2 @@
+let xs : [File] =
+  ['a.txt', 'b.txt', 'c.txt' : File];

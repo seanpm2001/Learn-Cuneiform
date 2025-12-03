@@ -1,0 +1,4 @@
+for x <- xs do
+  process-one( arg1 = x )
+  : File
+end;

@@ -1,0 +1,4 @@
+let output-of-f : File = f();
+let output-of-g : File = g();
+
+h( f = output-of-f, g = output-of-g );

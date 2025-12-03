@@ -1,0 +1,2 @@
+let r : <a : File, b : File> =
+  &lt;a = f(), b = g()&gt;;

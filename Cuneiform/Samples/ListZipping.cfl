@@ -1,0 +1,4 @@
+for x <- xs, y <- ys do
+  process-two( arg1 = x, arg2 = y )
+  : File
+end;

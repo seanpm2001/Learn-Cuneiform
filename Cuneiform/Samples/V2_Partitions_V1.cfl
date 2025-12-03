@@ -1,0 +1,14 @@
+deftask unzip( <out( File )> : zip( File ) ) in bash *{
+  unzip -d dir $zip
+  out=`ls dir | awk '{print "dir/" $0}'`
+}*
+
+deftask split( <out( File )> : file( File ) ) in bash *{
+  split -l 1024 $file txt
+  out=txt*
+}*
+
+sotu = "sotu/stateoftheunion1790-2014.txt.zip";
+fileLst = split( file: unzip( zip: sotu ) );
+
+fileLst;

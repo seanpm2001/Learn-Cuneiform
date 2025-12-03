@@ -1,0 +1,5 @@
+def samtoolsSort( bam : File ) -> <sorted : File>
+in Bash *{
+  sorted=sorted.bam
+  samtools sort -m 2G $bam -o $sorted
+}*

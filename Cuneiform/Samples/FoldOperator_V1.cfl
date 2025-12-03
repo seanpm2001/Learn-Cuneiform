@@ -1,0 +1,4 @@
+  fold acc = 0, x <- xs do
+    add( a = acc, b = x )
+  end;
+
